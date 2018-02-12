@@ -28,9 +28,9 @@ $(document).ready(function () {
             output="<table class='responsive-table'><thead><tr><th scope='row'>Environment</th><th scope='row'>IP</th><th scope='row'>Time Stamp</th><th scope='row'>Status</th><th scope='row'>Built By</th><th scope='row'>Branch</th><th scope='row'>Job Type</th></thead><tbody>";
                     for (var i in result.buildDetails)
                     {
-                        var datestr = new Date(new Date(result.buildDetails[itemCount].timeStamp) + 4*60*60*1000);
-                        //console.log(result.buildDetails[1].timeStamp);
-                        output+="<tr><td data-title='Environment'>"+ result.buildDetails[itemCount].environment + "</td><td data-title='IP'>"+ result.buildDetails[itemCount].ip + "</td><td data-title='Time Stamp'>" + (datestr.toLocaleDateString() + "::" +  datestr.toLocaleTimeString()) + "</td><td data-title='Status' class="+result.buildDetails[itemCount].status+">" + result.buildDetails[itemCount].status + "</td><td data-title='Build By'>" + result.buildDetails[itemCount].builtBy + "</td><td data-title='Branch'>" + result.buildDetails[itemCount].branch + "</td><td data-title='Job Type'>" + result.buildDetails[itemCount].jobType + "</td></tr>";
+                        //var datestr = new Date(new Date(result.buildDetails[itemCount].timeStamp) + 4*60*60*1000);
+                        //console.log(result.buildDetails[itemCount].timeStamp);
+                        output+="<tr><td data-title='Environment'>"+ result.buildDetails[itemCount].environment + "</td><td data-title='IP'>"+ result.buildDetails[itemCount].ip + "</td><td data-title='Time Stamp'>" + result.buildDetails[itemCount].timeStamp + "</td><td data-title='Status' class="+result.buildDetails[itemCount].status+">" + result.buildDetails[itemCount].status + "</td><td data-title='Build By'>" + result.buildDetails[itemCount].builtBy + "</td><td data-title='Branch'>" + result.buildDetails[itemCount].branch + "</td><td data-title='Job Type'>" + result.buildDetails[itemCount].jobType + "</td></tr>";
                         console.log(output);
                         itemCount = itemCount + 1;
                     }
