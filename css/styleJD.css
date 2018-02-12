@@ -256,6 +256,9 @@ body {
 .responsive-table tbody tr td.Success {
   background-color:#008000;
 }
+.responsive-table tbody tr td.inProgress {
+  background-color:red;
+}
 @media (min-width: 48em) {
   .responsive-table tbody tr {
     display: table-row;
