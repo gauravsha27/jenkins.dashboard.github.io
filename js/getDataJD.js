@@ -29,7 +29,7 @@ $(document).ready(function () {
             
                     for (var i in result.buildDetails)
                     {
-                        var datestr = new Date(new Date(result.buildDetails[itemCount].timeStamp) + 4*60*60*1000);
+                        var datestr = new Date(new Date(result.buildDetails[itemCount].timeStamp));
                         //console.log(i.length);
                         output+="<tr><td data-title='Environment'>"+ result.buildDetails[itemCount].environment + "</td><td data-title='IP'>"+ result.buildDetails[itemCount].ip + "</td><td data-title='Time Stamp'>" + (datestr.toLocaleDateString() + "::" +  datestr.toLocaleTimeString()) + "</td><td data-title='Status' class="+result.buildDetails[itemCount].status+">" + result.buildDetails[itemCount].status + "</td><td data-title='Build By'>" + result.buildDetails[itemCount].builtBy + "</td><td data-title='Job Type'>" + result.buildDetails[itemCount].jobType + "</td></tr>";
                         console.log(output);
