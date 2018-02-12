@@ -9,7 +9,8 @@ $(document).ready(function () {
         var output = " ";
         var displayResources = $('#showResourcesBox');
 
-        displayResources.text('Loading data from JSON source...');
+        //displayResources.text('Loading data from JSON source...');
+        $('.heart').removeClass('heartVisible');
 
         $.ajax({
           url: 'https://api.jsonbin.io/b/5a7adc119a230212562a7828/latest',
