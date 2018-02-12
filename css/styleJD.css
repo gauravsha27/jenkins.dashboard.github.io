@@ -257,7 +257,7 @@ body {
   background-color:#008000;
 }
 .responsive-table tbody tr td.inProgress {
-  background-color: #00FF00;
+  background-color: #ff0000;
 }
 @media (min-width: 48em) {
   .responsive-table tbody tr {
@@ -422,7 +422,7 @@ body {
     background-color:#008000;
   }
   .responsive-table tbody tr td.inProgress {
-    background-color:red;
+    background-color:#ff0000;
   }
 }
 
